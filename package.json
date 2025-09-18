@@ -16,5 +16,8 @@
     "url": "https://github.com/gustasvos/RI6/issues"
   },
   "homepage": "https://github.com/gustasvos/RI6#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  }
 }
