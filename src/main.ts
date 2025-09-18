@@ -4,6 +4,8 @@ import Subtracao from './subtracao';
 import Multiplicacao from './multiplicacao';
 import Divisao from './divisao';
 import Mensagens from './mensagens';
+import Radiciacao from './radiciacao';
+import Potenciacao from './potenciacao';
 
 let mensagens = new Mensagens()
 
@@ -40,6 +42,14 @@ let iniciar = () => {
                 break
             case 'Dividir':
                 calculo = new Divisao()
+                console.log(`O resultado da operação é: ${calculo.calcular(n1, n2)}\n`)
+                break
+            case 'Raiz':
+                calculo = new Radiciacao()
+                console.log(`O resultado da operação é: ${calculo.calcular(n1, n2)}\n`)
+                break 
+            case 'Potencia':
+                calculo = new Potenciacao()
                 console.log(`O resultado da operação é: ${calculo.calcular(n1, n2)}\n`)
                 break
             case 'Sair':
