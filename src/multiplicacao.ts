@@ -1,7 +1,7 @@
 import Calculo from "./calculo";
 
 export default class Multiplicacao extends Calculo {
-    public calculcar(n1: number, n2: number): number {
+    public calcular(n1: number, n2: number): number {
         return n1 * n2
     }
 }
