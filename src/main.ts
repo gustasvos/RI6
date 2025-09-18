@@ -3,6 +3,9 @@ import Soma from './soma';
 import Subtracao from './subtracao';
 import Multiplicacao from './multiplicacao';
 import Divisao from './divisao';
+import Mensagens from './mensagens';
+
+let mensagens = new Mensagens()
 
 let iniciar = () => {
     let leitor = readline.createInterface({
@@ -44,3 +47,8 @@ let iniciar = () => {
         }
     })
 }
+
+mensagens.boasVindas()
+mensagens.listarOpcoes()
+mensagens.comoUsar()
+iniciar()
