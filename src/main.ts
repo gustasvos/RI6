@@ -6,6 +6,7 @@ import Divisao from './divisao';
 import Mensagens from './mensagens';
 import Radiciacao from './radiciacao';
 import Potenciacao from './potenciacao';
+import Equacao from './equacao';
 
 let mensagens = new Mensagens()
 
@@ -20,6 +21,11 @@ let iniciar = () => {
         let n1 = Number(instrucoes[0])
         let n2 = Number(instrucoes[1])
         let operacao = instrucoes[2]
+
+        let eq = new Equacao()
+        let a = Number(instrucoes[0])
+        let b = Number(instrucoes[1])
+        let c = Number(instrucoes[2])
 
         if (instrucoes.length == 1) {
             operacao = instrucoes[0]
